@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web Personal</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/flexbox.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>Bienvenido a Mi Página Web Personal</h1>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#acerca-de-mi">Acerca de mí</a>
+        <a href="#skills">Skills</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#formacion">Formación</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <section id="inicio" class="flex-container">
+        <div class="inicio-content">
+            <div class="text-content">
+                <h1 class="titulo">¡Hola! Mi nombre es Ingrid Melany Cordova Yangali</h1>
+                <p><span class="primero">Construyo páginas web</span></p>
+                <p class="texto">Formada en la Universidad Continental, actualmente me encuentro participando del proyecto Oracle ONE en Alura Latam. Aquí encontrarás información sobre mí, mi experiencia, proyectos y cómo contactarme.</p>
+            </div>
+            <img src="/assets/mel.jpeg" alt="imagen personal" class="yo">
+        </div>
+    </section>
+
+    <section id="acerca-de-mi" class="flex-container">
+        <div class="acerca-de-mi-content">
+            <div class="acerca-de-mi-text">
+                <h2>Acerca de mí</h2>
+                <div class="text-with-image">
+                    <p>Egresada de la carrera de Ingeniería de Sistemas e Informática con ganas de aprender en el rubro. Proactividad, responsabilidad, manejo del idioma inglés a nivel intermedio y portugués a nivel básico. Conocimiento en TICs, manejo de office intermedio, diseño gráfico a nivel básico. Me adapté a situaciones complicadas, lideré los grupos de trabajo en los cuales se me asignaron en la universidad con resultados satisfactorios.</p>
+                    <img src="assets/book.jpg" alt="libro" class="libro">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="container">
+            <div class="grid">
+                <div class="card">
+                    <div class="icon">&#9733;</div>
+                    <div class="label">Html 5</div>
+                </div>
+                <div class="card">
+                    <div class="icon">JS</div>
+                    <div class="label">Javascript</div>
+                </div>
+                <div class="card">
+                    <div class="icon">PHP</div>
+                    <div class="label">PHP</div>
+                </div>
+                <div class="card">
+                    <div class="icon">&#9741;</div>
+                    <div class="label">Node JS</div>
+                </div>
+                <div class="card">
+                    <div class="icon">&#9883;</div>
+                    <div class="label">React</div>
+                </div>
+                <div class="card">
+                    <div class="icon">&#9781;</div>
+                    <div class="label">CSS</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="hobbies">
+        <h2>Hobbies</h2>
+        <div class="container">
+            <div class="grid">
+                <div class="card">
+                    <div class="icon">&#9976;</div>
+                    <div class="label">Patinaje</div>
+                </div>
+                <div class="card">
+                    <div class="icon">&#127928;</div>
+                    <div class="label">Tocar bajo</div>
+                </div>
+                <div class="card">
+                    <div class="icon">&#127911;</div>
+                    <div class="label">Oír música</div>
+                </div>
+                <div class="card">
+                    <div class="icon">&#128250;</div>
+                    <div class="label">Ver series</div>
+                </div>
+                <div class="card">
+                    <div class="icon">&#127859;</div>
+                    <div class="label">Cocinar</div>
+                </div>
+                <div class="card">
+                    <div class="icon">&#128247;</div>
+                    <div class="label">Tomar fotos</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="formacion">
+        <h2>Formación</h2>
+        <div class="container">
+            <div class="grid">
+                <div class="card-formacion">
+                    <img src="/assets/universidad.png" alt="Universidad" class="icon-formacion">
+                    <div class="label">Bachiller en Ingeniería de Sistemas e Informática</div>
+                </div>
+                <div class="card-formacion">
+                    <img src="/assets/alura_logo.png" alt="Curso" class="icon-formacion">
+                    <div class="label">Curso de Desarrollo Web</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="descargar-pdf">
+        <h2 class="Descarga">Descargar CV</h2>
+        <p>Descarga mi CV en formato PDF:</p>
+        <button onclick="descargarCV()" class="download-button">Descargar CV</button>
+        
+    </section>
+
+    <section id="proyectos">
+        <h2>Mis Proyectos</h2>
+        <p>Aquí puedes ver uno de los proyectos que he realizado.</p>
+        <div class="project">
+            <h3>Encriptador de texto</h3>
+            <p>Descripción del proyecto 1.</p>
+            <img src="/assets/proyecto1.png" alt="Proyecto 1" class="project-image">
+        </div>
+        <div class="project-content">
+            <a href="https://encriptado-qyxtymlsh-ingrids-projects-cbd14484.vercel.app/" class="demo-button">Demo</a>
+        </div>
+    </section>
+ 
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Si deseas contactarme, puedes hacerlo a través de los siguientes medios:</p>
+        <div class="form-card1">
+          <div class="form-card2">
+            <form class="form">
+              <p class="form-heading">Contactame</p>
+        
+              <div class="form-field">
+                <input required="" placeholder="Name" class="input-field" type="text" />
+              </div>
+        
+              <div class="form-field">
+                <input
+                  required=""
+                  placeholder="Email"
+                  class="input-field"
+                  type="email"
+                />
+              </div>
+        
+              <div class="form-field">
+                <input
+                  required=""
+                  placeholder="Subject"
+                  class="input-field"
+                  type="text"
+                />
+              </div>
+        
+              <div class="form-field">
+                <textarea
+                  required=""
+                  placeholder="Message"
+                  cols="30"
+                  rows="3"
+                  class="input-field"
+                ></textarea>
+              </div>
+        
+              <button class="sendMessage-btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Ingrid Melany Cordova Yangali. Todos los derechos reservados.</p>
+    </footer>
+
+
+    <input type="checkbox" id="checkboxInput" />
+    <label for="checkboxInput" class="toggleSwitch">
+        <div class="speaker">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 75 75">
+                <path
+                    d="M39.389,13.769 L22.235,28.606 L6,28.606 L6,47.699 L21.989,47.699 L39.389,62.75 L39.389,13.769z"
+                    style="stroke:#fff;stroke-width:5;stroke-linejoin:round;fill:#fff;"
+                ></path>
+                <path
+                    d="M48,27.6a19.5,19.5 0 0 1 0,21.4M55.1,20.5a30,30 0 0 1 0,35.6M61.6,14a38.8,38.8 0 0 1 0,48.6"
+                    style="fill:none;stroke:#fff;stroke-width:5;stroke-linecap:round"
+                ></path>
+            </svg>
+        </div>
+
+        <div class="mute-speaker">
+            <svg version="1.0" viewBox="0 0 75 75" stroke="#fff" stroke-width="5">
+                <path
+                    d="m39,14-17,15H6V48H22l17,15z"
+                    fill="#fff"
+                    stroke-linejoin="round"
+                ></path>
+                <path
+                    d="m49,26 20,24m0-24-20,24"
+                    fill="#fff"
+                    stroke-linecap="round"
+                ></path>
+            </svg>
+        </div>
+    </label>
+
+    <!-- Agregar el reproductor de audio -->
+    <audio id="audioPlayer" controls autoplay loop>
+        <source src="Hozer.mp3" type="audio/mpeg">
+        Tu navegador no soporta la etiqueta de audio.
+    </audio>
+
+    <!-- Enlazar el archivo JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
